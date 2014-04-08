@@ -68,7 +68,7 @@ Thanks to Gabriel Handford and Sveinung Kval Bakken for their work on the `XCTAs
 
 Thanks to John Gruber's original `markdown.pl` script which is bundled with the server to generate the HTML for display on the client.
 
-[Derek Briggs][db] from [Neo Innovation](www.neo.com) did an awesome job on the icon. Give him some love and a hug.
+[Derek Briggs][db] from [Neo Innovation](http://www.neo.com) did an awesome job on the icon. Give him some love and a hug.
 
   [md]: https://daringfireball.net/projects/markdown/
   [db]: http://twitter.com/PixelJanitor
