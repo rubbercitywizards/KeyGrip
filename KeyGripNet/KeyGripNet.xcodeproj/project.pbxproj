@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB0D425D1890634A006D1DF5 /* RCWBonjourConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = AB0D425B1890634A006D1DF5 /* RCWBonjourConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB0D425E1890634A006D1DF5 /* RCWBonjourConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D425C1890634A006D1DF5 /* RCWBonjourConnection.m */; };
+		AB0D425F1890634A006D1DF5 /* RCWBonjourConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D425C1890634A006D1DF5 /* RCWBonjourConnection.m */; };
+		AB0D42611890635C006D1DF5 /* RCWKGConnectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0D42601890635C006D1DF5 /* RCWKGConnectionTest.m */; };
+		AB2363C4188F79D200882AA2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2363C3188F79D200882AA2 /* Cocoa.framework */; };
+		AB2363D5188F79D200882AA2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2363D4188F79D200882AA2 /* XCTest.framework */; };
+		AB2363D6188F79D200882AA2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2363C3188F79D200882AA2 /* Cocoa.framework */; };
+		AB2363D9188F79D200882AA2 /* libKeyGripNet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2363C0188F79D200882AA2 /* libKeyGripNet.a */; };
+		AB2363DF188F79D200882AA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB2363DD188F79D200882AA2 /* InfoPlist.strings */; };
+		AB2363EB188F7A2E00882AA2 /* RCWKGConnectionFinderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2363EA188F7A2E00882AA2 /* RCWKGConnectionFinderTest.m */; };
+		AB2363EE188F7A7200882AA2 /* KeyGripNet.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2363EC188F7A7200882AA2 /* KeyGripNet.h */; };
+		AB2363EF188F7A7200882AA2 /* KeyGripNet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2363ED188F7A7200882AA2 /* KeyGripNet.m */; };
+		AB2363F0188F7A7A00882AA2 /* KeyGripNet.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2363ED188F7A7200882AA2 /* KeyGripNet.m */; };
+		AB2363F4188F96C100882AA2 /* RCWBonjourConnectionFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2363F2188F96C100882AA2 /* RCWBonjourConnectionFinder.h */; };
+		AB2363F5188F96C100882AA2 /* RCWBonjourConnectionFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2363F3188F96C100882AA2 /* RCWBonjourConnectionFinder.m */; };
+		AB2363F6188F96C100882AA2 /* RCWBonjourConnectionFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2363F3188F96C100882AA2 /* RCWBonjourConnectionFinder.m */; };
+		AB4294691892EDCE007CC818 /* RCWKGClientAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = AB4294671892EDCE007CC818 /* RCWKGClientAPI.h */; };
+		AB42946A1892EDCE007CC818 /* RCWKGClientAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4294681892EDCE007CC818 /* RCWKGClientAPI.m */; };
+		AB42946D1892EDDC007CC818 /* RCWKGServerAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = AB42946B1892EDDC007CC818 /* RCWKGServerAPI.h */; };
+		AB42946E1892EDDC007CC818 /* RCWKGServerAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB42946C1892EDDC007CC818 /* RCWKGServerAPI.m */; };
+		AB4294701892EE09007CC818 /* RCWKGClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AB42946F1892EE09007CC818 /* RCWKGClientTest.m */; };
+		AB4294711892EE10007CC818 /* RCWKGClientAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4294681892EDCE007CC818 /* RCWKGClientAPI.m */; };
+		AB4294721892EE10007CC818 /* RCWKGServerAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB42946C1892EDDC007CC818 /* RCWKGServerAPI.m */; };
+		AB4294751892EE99007CC818 /* TestCaseStreamConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4294741892EE99007CC818 /* TestCaseStreamConnection.m */; };
+		AB7F46D91892DC1200C11547 /* RCWKGProtocolCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = AB7F46D71892DC1200C11547 /* RCWKGProtocolCommand.h */; };
+		AB7F46DA1892DC1200C11547 /* RCWKGProtocolCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7F46D81892DC1200C11547 /* RCWKGProtocolCommand.m */; };
+		AB7F46DB1892DC1200C11547 /* RCWKGProtocolCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7F46D81892DC1200C11547 /* RCWKGProtocolCommand.m */; };
+		AB7F46DD1892DDA500C11547 /* RCWKGProtocolCommandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7F46DC1892DDA500C11547 /* RCWKGProtocolCommandTest.m */; };
+		AB9348EB1891FA6000D07165 /* RCWKGDataStreamCollectorEmitterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9348EA1891FA6000D07165 /* RCWKGDataStreamCollectorEmitterTest.m */; };
+		AB9348F3189225C100D07165 /* RCWDataStreamEmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9348F1189225C100D07165 /* RCWDataStreamEmitter.h */; };
+		AB9348F4189225C100D07165 /* RCWDataStreamEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9348F2189225C100D07165 /* RCWDataStreamEmitter.m */; };
+		AB9348F5189225C100D07165 /* RCWDataStreamEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9348F2189225C100D07165 /* RCWDataStreamEmitter.m */; };
+		AB9348F8189225CC00D07165 /* RCWDataStreamCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9348F6189225CC00D07165 /* RCWDataStreamCollector.h */; };
+		AB9348F9189225CC00D07165 /* RCWDataStreamCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9348F7189225CC00D07165 /* RCWDataStreamCollector.m */; };
+		AB9348FA189225CC00D07165 /* RCWDataStreamCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9348F7189225CC00D07165 /* RCWDataStreamCollector.m */; };
+		ABA759FA1899E91B00A92473 /* RCWKGSocketConnectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA759F91899E91B00A92473 /* RCWKGSocketConnectionTest.m */; };
+		ABD9BFA7189AE75B000F355C /* RCWSocketServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD9BFA5189AE75B000F355C /* RCWSocketServerConnection.h */; };
+		ABD9BFA8189AE75B000F355C /* RCWSocketServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD9BFA6189AE75B000F355C /* RCWSocketServerConnection.m */; };
+		ABD9BFA9189AE75B000F355C /* RCWSocketServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD9BFA6189AE75B000F355C /* RCWSocketServerConnection.m */; };
+		ABD9BFAC189AE97F000F355C /* RCWSocketClientConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD9BFAA189AE97F000F355C /* RCWSocketClientConnection.h */; };
+		ABD9BFAD189AE97F000F355C /* RCWSocketClientConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD9BFAB189AE97F000F355C /* RCWSocketClientConnection.m */; };
+		ABD9BFAE189AE97F000F355C /* RCWSocketClientConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD9BFAB189AE97F000F355C /* RCWSocketClientConnection.m */; };
+		ABE579FD1897757F00D80EEB /* XCTAsyncTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE579FC1897757F00D80EEB /* XCTAsyncTestCase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB2363D7188F79D200882AA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB2363B8188F79D200882AA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB2363BF188F79D200882AA2;
+			remoteInfo = KeyGripNet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB09CC211892AAE8001CD0BB /* RCWStreamConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCWStreamConnection.h; sourceTree = "<group>"; };
+		AB0D425B1890634A006D1DF5 /* RCWBonjourConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWBonjourConnection.h; sourceTree = "<group>"; };
+		AB0D425C1890634A006D1DF5 /* RCWBonjourConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWBonjourConnection.m; sourceTree = "<group>"; };
+		AB0D42601890635C006D1DF5 /* RCWKGConnectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWKGConnectionTest.m; sourceTree = "<group>"; };
+		AB2363C0188F79D200882AA2 /* libKeyGripNet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKeyGripNet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2363C3188F79D200882AA2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AB2363C6188F79D200882AA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB2363C8188F79D200882AA2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AB2363CB188F79D200882AA2 /* KeyGripNet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyGripNet-Prefix.pch"; sourceTree = "<group>"; };
+		AB2363D3188F79D200882AA2 /* KeyGripNetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyGripNetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2363D4188F79D200882AA2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AB2363DC188F79D200882AA2 /* KeyGripNetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyGripNetTests-Info.plist"; sourceTree = "<group>"; };
+		AB2363DE188F79D200882AA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB2363EA188F7A2E00882AA2 /* RCWKGConnectionFinderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWKGConnectionFinderTest.m; sourceTree = "<group>"; };
+		AB2363EC188F7A7200882AA2 /* KeyGripNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyGripNet.h; sourceTree = "<group>"; };
+		AB2363ED188F7A7200882AA2 /* KeyGripNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyGripNet.m; sourceTree = "<group>"; };
+		AB2363F1188F826D00882AA2 /* RCWXCTAsyncHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCWXCTAsyncHelpers.h; sourceTree = "<group>"; };
+		AB2363F2188F96C100882AA2 /* RCWBonjourConnectionFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWBonjourConnectionFinder.h; sourceTree = "<group>"; };
+		AB2363F3188F96C100882AA2 /* RCWBonjourConnectionFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWBonjourConnectionFinder.m; sourceTree = "<group>"; };
+		AB4294671892EDCE007CC818 /* RCWKGClientAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWKGClientAPI.h; sourceTree = "<group>"; };
+		AB4294681892EDCE007CC818 /* RCWKGClientAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWKGClientAPI.m; sourceTree = "<group>"; };
+		AB42946B1892EDDC007CC818 /* RCWKGServerAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWKGServerAPI.h; sourceTree = "<group>"; };
+		AB42946C1892EDDC007CC818 /* RCWKGServerAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWKGServerAPI.m; sourceTree = "<group>"; };
+		AB42946F1892EE09007CC818 /* RCWKGClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWKGClientTest.m; sourceTree = "<group>"; };
+		AB4294731892EE99007CC818 /* TestCaseStreamConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseStreamConnection.h; sourceTree = "<group>"; };
+		AB4294741892EE99007CC818 /* TestCaseStreamConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCaseStreamConnection.m; sourceTree = "<group>"; };
+		AB7F46D71892DC1200C11547 /* RCWKGProtocolCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWKGProtocolCommand.h; sourceTree = "<group>"; };
+		AB7F46D81892DC1200C11547 /* RCWKGProtocolCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWKGProtocolCommand.m; sourceTree = "<group>"; };
+		AB7F46DC1892DDA500C11547 /* RCWKGProtocolCommandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWKGProtocolCommandTest.m; sourceTree = "<group>"; };
+		AB9348EA1891FA6000D07165 /* RCWKGDataStreamCollectorEmitterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWKGDataStreamCollectorEmitterTest.m; sourceTree = "<group>"; };
+		AB9348F1189225C100D07165 /* RCWDataStreamEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWDataStreamEmitter.h; sourceTree = "<group>"; };
+		AB9348F2189225C100D07165 /* RCWDataStreamEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWDataStreamEmitter.m; sourceTree = "<group>"; };
+		AB9348F6189225CC00D07165 /* RCWDataStreamCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWDataStreamCollector.h; sourceTree = "<group>"; };
+		AB9348F7189225CC00D07165 /* RCWDataStreamCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWDataStreamCollector.m; sourceTree = "<group>"; };
+		ABA759F91899E91B00A92473 /* RCWKGSocketConnectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWKGSocketConnectionTest.m; sourceTree = "<group>"; };
+		ABD9BFA5189AE75B000F355C /* RCWSocketServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWSocketServerConnection.h; sourceTree = "<group>"; };
+		ABD9BFA6189AE75B000F355C /* RCWSocketServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWSocketServerConnection.m; sourceTree = "<group>"; };
+		ABD9BFAA189AE97F000F355C /* RCWSocketClientConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWSocketClientConnection.h; sourceTree = "<group>"; };
+		ABD9BFAB189AE97F000F355C /* RCWSocketClientConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWSocketClientConnection.m; sourceTree = "<group>"; };
+		ABE579FB1897757F00D80EEB /* XCTAsyncTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTAsyncTestCase.h; sourceTree = "<group>"; };
+		ABE579FC1897757F00D80EEB /* XCTAsyncTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTAsyncTestCase.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB2363BD188F79D200882AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2363C4188F79D200882AA2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2363D0188F79D200882AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2363D6188F79D200882AA2 /* Cocoa.framework in Frameworks */,
+				AB2363D9188F79D200882AA2 /* libKeyGripNet.a in Frameworks */,
+				AB2363D5188F79D200882AA2 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB09CC221892AC74001CD0BB /* Data Stream Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				AB09CC211892AAE8001CD0BB /* RCWStreamConnection.h */,
+				AB2363F2188F96C100882AA2 /* RCWBonjourConnectionFinder.h */,
+				AB2363F3188F96C100882AA2 /* RCWBonjourConnectionFinder.m */,
+				AB0D425B1890634A006D1DF5 /* RCWBonjourConnection.h */,
+				AB0D425C1890634A006D1DF5 /* RCWBonjourConnection.m */,
+				ABD9BFA5189AE75B000F355C /* RCWSocketServerConnection.h */,
+				ABD9BFA6189AE75B000F355C /* RCWSocketServerConnection.m */,
+				ABD9BFAA189AE97F000F355C /* RCWSocketClientConnection.h */,
+				ABD9BFAB189AE97F000F355C /* RCWSocketClientConnection.m */,
+				AB9348F1189225C100D07165 /* RCWDataStreamEmitter.h */,
+				AB9348F2189225C100D07165 /* RCWDataStreamEmitter.m */,
+				AB9348F6189225CC00D07165 /* RCWDataStreamCollector.h */,
+				AB9348F7189225CC00D07165 /* RCWDataStreamCollector.m */,
+			);
+			name = "Data Stream Stuff";
+			sourceTree = "<group>";
+		};
+		AB09CC331892ACDC001CD0BB /* Key Grip Client/Server */ = {
+			isa = PBXGroup;
+			children = (
+				AB7F46D71892DC1200C11547 /* RCWKGProtocolCommand.h */,
+				AB7F46D81892DC1200C11547 /* RCWKGProtocolCommand.m */,
+				AB4294671892EDCE007CC818 /* RCWKGClientAPI.h */,
+				AB4294681892EDCE007CC818 /* RCWKGClientAPI.m */,
+				AB42946B1892EDDC007CC818 /* RCWKGServerAPI.h */,
+				AB42946C1892EDDC007CC818 /* RCWKGServerAPI.m */,
+			);
+			name = "Key Grip Client/Server";
+			sourceTree = "<group>";
+		};
+		AB2363B7188F79D200882AA2 = {
+			isa = PBXGroup;
+			children = (
+				AB2363C9188F79D200882AA2 /* KeyGripNet */,
+				AB2363DA188F79D200882AA2 /* KeyGripNetTests */,
+				AB2363C2188F79D200882AA2 /* Frameworks */,
+				AB2363C1188F79D200882AA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB2363C1188F79D200882AA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB2363C0188F79D200882AA2 /* libKeyGripNet.a */,
+				AB2363D3188F79D200882AA2 /* KeyGripNetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB2363C2188F79D200882AA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB2363C3188F79D200882AA2 /* Cocoa.framework */,
+				AB2363D4188F79D200882AA2 /* XCTest.framework */,
+				AB2363C5188F79D200882AA2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB2363C5188F79D200882AA2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB2363C6188F79D200882AA2 /* Foundation.framework */,
+				AB2363C8188F79D200882AA2 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AB2363C9188F79D200882AA2 /* KeyGripNet */ = {
+			isa = PBXGroup;
+			children = (
+				AB2363CA188F79D200882AA2 /* Supporting Files */,
+				AB2363EC188F7A7200882AA2 /* KeyGripNet.h */,
+				AB2363ED188F7A7200882AA2 /* KeyGripNet.m */,
+				AB09CC331892ACDC001CD0BB /* Key Grip Client/Server */,
+				AB09CC221892AC74001CD0BB /* Data Stream Stuff */,
+			);
+			path = KeyGripNet;
+			sourceTree = "<group>";
+		};
+		AB2363CA188F79D200882AA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB2363CB188F79D200882AA2 /* KeyGripNet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB2363DA188F79D200882AA2 /* KeyGripNetTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB2363DB188F79D200882AA2 /* Supporting Files */,
+				ABE579FB1897757F00D80EEB /* XCTAsyncTestCase.h */,
+				ABE579FC1897757F00D80EEB /* XCTAsyncTestCase.m */,
+				AB2363EA188F7A2E00882AA2 /* RCWKGConnectionFinderTest.m */,
+				AB0D42601890635C006D1DF5 /* RCWKGConnectionTest.m */,
+				ABA759F91899E91B00A92473 /* RCWKGSocketConnectionTest.m */,
+				AB2363F1188F826D00882AA2 /* RCWXCTAsyncHelpers.h */,
+				AB4294731892EE99007CC818 /* TestCaseStreamConnection.h */,
+				AB4294741892EE99007CC818 /* TestCaseStreamConnection.m */,
+				AB9348EA1891FA6000D07165 /* RCWKGDataStreamCollectorEmitterTest.m */,
+				AB7F46DC1892DDA500C11547 /* RCWKGProtocolCommandTest.m */,
+				AB42946F1892EE09007CC818 /* RCWKGClientTest.m */,
+			);
+			path = KeyGripNetTests;
+			sourceTree = "<group>";
+		};
+		AB2363DB188F79D200882AA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB2363DC188F79D200882AA2 /* KeyGripNetTests-Info.plist */,
+				AB2363DD188F79D200882AA2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AB2363BE188F79D200882AA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB4294691892EDCE007CC818 /* RCWKGClientAPI.h in Headers */,
+				AB9348F3189225C100D07165 /* RCWDataStreamEmitter.h in Headers */,
+				AB2363EE188F7A7200882AA2 /* KeyGripNet.h in Headers */,
+				AB7F46D91892DC1200C11547 /* RCWKGProtocolCommand.h in Headers */,
+				ABD9BFAC189AE97F000F355C /* RCWSocketClientConnection.h in Headers */,
+				AB2363F4188F96C100882AA2 /* RCWBonjourConnectionFinder.h in Headers */,
+				AB42946D1892EDDC007CC818 /* RCWKGServerAPI.h in Headers */,
+				AB9348F8189225CC00D07165 /* RCWDataStreamCollector.h in Headers */,
+				AB0D425D1890634A006D1DF5 /* RCWBonjourConnection.h in Headers */,
+				ABD9BFA7189AE75B000F355C /* RCWSocketServerConnection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AB2363BF188F79D200882AA2 /* KeyGripNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2363E4188F79D200882AA2 /* Build configuration list for PBXNativeTarget "KeyGripNet" */;
+			buildPhases = (
+				AB2363BC188F79D200882AA2 /* Sources */,
+				AB2363BD188F79D200882AA2 /* Frameworks */,
+				AB2363BE188F79D200882AA2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyGripNet;
+			productName = KeyGripNet;
+			productReference = AB2363C0188F79D200882AA2 /* libKeyGripNet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AB2363D2188F79D200882AA2 /* KeyGripNetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2363E7188F79D200882AA2 /* Build configuration list for PBXNativeTarget "KeyGripNetTests" */;
+			buildPhases = (
+				AB2363CF188F79D200882AA2 /* Sources */,
+				AB2363D0188F79D200882AA2 /* Frameworks */,
+				AB2363D1188F79D200882AA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB2363D8188F79D200882AA2 /* PBXTargetDependency */,
+			);
+			name = KeyGripNetTests;
+			productName = KeyGripNetTests;
+			productReference = AB2363D3188F79D200882AA2 /* KeyGripNetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB2363B8188F79D200882AA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Rubber City Wizards";
+			};
+			buildConfigurationList = AB2363BB188F79D200882AA2 /* Build configuration list for PBXProject "KeyGripNet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB2363B7188F79D200882AA2;
+			productRefGroup = AB2363C1188F79D200882AA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB2363BF188F79D200882AA2 /* KeyGripNet */,
+				AB2363D2188F79D200882AA2 /* KeyGripNetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB2363D1188F79D200882AA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2363DF188F79D200882AA2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB2363BC188F79D200882AA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7F46DA1892DC1200C11547 /* RCWKGProtocolCommand.m in Sources */,
+				AB2363F5188F96C100882AA2 /* RCWBonjourConnectionFinder.m in Sources */,
+				ABD9BFAD189AE97F000F355C /* RCWSocketClientConnection.m in Sources */,
+				AB42946E1892EDDC007CC818 /* RCWKGServerAPI.m in Sources */,
+				AB9348F4189225C100D07165 /* RCWDataStreamEmitter.m in Sources */,
+				AB2363EF188F7A7200882AA2 /* KeyGripNet.m in Sources */,
+				ABD9BFA8189AE75B000F355C /* RCWSocketServerConnection.m in Sources */,
+				AB42946A1892EDCE007CC818 /* RCWKGClientAPI.m in Sources */,
+				AB9348F9189225CC00D07165 /* RCWDataStreamCollector.m in Sources */,
+				AB0D425E1890634A006D1DF5 /* RCWBonjourConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2363CF188F79D200882AA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB4294721892EE10007CC818 /* RCWKGServerAPI.m in Sources */,
+				AB9348FA189225CC00D07165 /* RCWDataStreamCollector.m in Sources */,
+				ABE579FD1897757F00D80EEB /* XCTAsyncTestCase.m in Sources */,
+				AB7F46DD1892DDA500C11547 /* RCWKGProtocolCommandTest.m in Sources */,
+				AB2363EB188F7A2E00882AA2 /* RCWKGConnectionFinderTest.m in Sources */,
+				AB9348F5189225C100D07165 /* RCWDataStreamEmitter.m in Sources */,
+				AB2363F0188F7A7A00882AA2 /* KeyGripNet.m in Sources */,
+				AB0D425F1890634A006D1DF5 /* RCWBonjourConnection.m in Sources */,
+				AB0D42611890635C006D1DF5 /* RCWKGConnectionTest.m in Sources */,
+				AB4294711892EE10007CC818 /* RCWKGClientAPI.m in Sources */,
+				AB7F46DB1892DC1200C11547 /* RCWKGProtocolCommand.m in Sources */,
+				AB2363F6188F96C100882AA2 /* RCWBonjourConnectionFinder.m in Sources */,
+				AB4294751892EE99007CC818 /* TestCaseStreamConnection.m in Sources */,
+				AB9348EB1891FA6000D07165 /* RCWKGDataStreamCollectorEmitterTest.m in Sources */,
+				ABD9BFA9189AE75B000F355C /* RCWSocketServerConnection.m in Sources */,
+				ABD9BFAE189AE97F000F355C /* RCWSocketClientConnection.m in Sources */,
+				AB4294701892EE09007CC818 /* RCWKGClientTest.m in Sources */,
+				ABA759FA1899E91B00A92473 /* RCWKGSocketConnectionTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB2363D8188F79D200882AA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB2363BF188F79D200882AA2 /* KeyGripNet */;
+			targetProxy = AB2363D7188F79D200882AA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB2363DD188F79D200882AA2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB2363DE188F79D200882AA2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB2363E2188F79D200882AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AB2363E3188F79D200882AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AB2363E5188F79D200882AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyGripNet/KeyGripNet-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB2363E6188F79D200882AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyGripNet/KeyGripNet-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AB2363E8188F79D200882AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyGripNet/KeyGripNet-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KeyGripNetTests/KeyGripNetTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AB2363E9188F79D200882AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyGripNet/KeyGripNet-Prefix.pch";
+				INFOPLIST_FILE = "KeyGripNetTests/KeyGripNetTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB2363BB188F79D200882AA2 /* Build configuration list for PBXProject "KeyGripNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2363E2188F79D200882AA2 /* Debug */,
+				AB2363E3188F79D200882AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2363E4188F79D200882AA2 /* Build configuration list for PBXNativeTarget "KeyGripNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2363E5188F79D200882AA2 /* Debug */,
+				AB2363E6188F79D200882AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2363E7188F79D200882AA2 /* Build configuration list for PBXNativeTarget "KeyGripNetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2363E8188F79D200882AA2 /* Debug */,
+				AB2363E9188F79D200882AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB2363B8188F79D200882AA2 /* Project object */;
+}

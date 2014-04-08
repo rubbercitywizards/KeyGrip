@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>58BFBF02-A3D5-49AF-81E0-5BC243ED79E7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StageClip</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C4207B4C-0CC3-450E-AB24-7D2F54041C4B</key>
+		<string>ssh://bitbucket.org/rubbercitywizards/key-grip.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>client/StageClip.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C4207B4C-0CC3-450E-AB24-7D2F54041C4B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/rubbercitywizards/key-grip.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C4207B4C-0CC3-450E-AB24-7D2F54041C4B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C4207B4C-0CC3-450E-AB24-7D2F54041C4B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KeyGrip</string>
+		</dict>
+	</array>
+</dict>
+</plist>

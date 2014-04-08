@@ -1,0 +1,23 @@
+body {
+    font-family: Avenir, Helvetica, sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+pre {
+    background-color: #eee;
+    border: solid 1px #ddd;
+    overflow-x: scroll;
+    padding: 10px 9px;
+    margin-left: -9px;
+    margin-right: -9px;
+}
+
+pre.selecting {
+  background-color: #ddd;
+}
+
+pre.selected {
+  background-color: #99ada0;
+}
+

@@ -1,0 +1,74 @@
+You can start the server using the mac app and then give it a path to the input file.
+
+The api is very simple.  
+
+telnet localhost 58910 and you can interact with the api
+
+Commands:
+
+status
+
+        returns one line showing OK and the path to the current data file
+
+reload
+        reloads the current datafile (you don't have to restart the server to make changes)
+
+send
+        returns "sending BYTECOUNT <ALLTHEDATA>"
+        BYTECOUNT is the count of the bytes it's going to send in <ALLTHEDATA> which is an NSKeyedArchiver of an array of Code and Script objects
+
+list
+
+     returns a list of the ids available, this is for testing purposes mostly
+
+past <ID>
+     
+     pushes the contents of the object with ID into the pasteboard
+
+So, here is an example session using the gesture-recognizers.txt file
+
+bebop:~ jsmith$ telnet localhost 58910
+Trying ::1...
+telnet: connect to address ::1: Connection refused
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+list
+4E1E41B5BA68D0AE5EB866A020470EEAD9E99C01
+B2D57ADD1002D2907054D3F8B72E7BF63F4F2B2B
+244B09A542B87D131D826CD3CC7D3A6D89103C04
+5A5FBBA6E5E414D0A11E9AEEE257509B7DD8172B
+F88118021EA19EF311EFD067117B1791BDF0CE21
+A91FB9A20C98B8E379AEC7E072193C7B37AEA65E
+010A0C3D44F076574161F775C74A8E4D5AE9F2EA
+CC502EE12C2E77C9814B0BBC8806AC55E91C8015
+170FC5F90A447CF4040B9241EA0FDB1129376206
+21F7541C32F24563641939313BEF661B7DA7D83C
+29F275182C46099EC9951E4336F0CE373DC7FA54
+B0FDF2DDE489445BACFF5F6D3AFBAC1EEDF6D78F
+6DD930B4AD0E2043821EDA621AA44E489C4577C2
+F90AA619DF21CB473FB2AA3E21B770883F8F5D69
+CC4619B625646593A2E1131B7DD057FF478EEF7A
+EC83DFC7BD61D8A7008993A8AFEA36D6DF8268AA
+0026E0967590334D4DE282886964EB452CE10527
+76416943868AB66AE06F80F20FD8018A3F90939C
+F7B17B74BC56A62BA1F273A1870561768ECDD534
+FFB6E777CFE3146B4C74F89A43B878E1FCC05E9B
+6834C5898BB980D6D5E5A380EE08ABCC8FFF5605
+4D3B6F5B774D3EE1018B2607CA0968E3FFC02911
+5F8DFB772F2822CBE045E7B9BB805F5F33721BA3
+B18542D32286CD6AF638DEEAF81B4A5443439058
+5758356CFC8B91C1EDF1B7484EED9A53B0E42A4D
+4E0300FB6DFC67E3C13CA4EB9FDBA1F81F54FEDF
+95DC06DE1F7EDA044C7110B7CB7F59F71B4A0FD7
+status
+OK /Users/jsmith/Projects/key-grip/server/KeyGripServer/KeyGripServer/gesture-recognizers.txt
+paste 21F7541C32F24563641939313BEF661B7DA7D83C
+reload
+OK /Users/jsmith/Projects/key-grip/server/KeyGripServer/KeyGripServer/gesture-recognizers.txt
+^]
+telnet> quit
+Connection closed.
+bebop:~ jsmith$ 
+
+

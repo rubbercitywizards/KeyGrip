@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4027B776186205EC00168444 /* RCWHealthMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4027B775186205EC00168444 /* RCWHealthMeter.m */; };
+		AB006109183863EE00667A46 /* RCWGentleErrorNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB006108183863EE00667A46 /* RCWGentleErrorNotificationView.m */; };
+		AB021FEB183B1F4F00DC2725 /* RCWGentleErrorNotificationView-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AB021FEA183B1F4F00DC2725 /* RCWGentleErrorNotificationView-bg.png */; };
+		AB14CA09180E08A4000FCF87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14CA08180E08A4000FCF87 /* Foundation.framework */; };
+		AB14CA0B180E08A4000FCF87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14CA0A180E08A4000FCF87 /* CoreGraphics.framework */; };
+		AB14CA0D180E08A4000FCF87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14CA0C180E08A4000FCF87 /* UIKit.framework */; };
+		AB14CA13180E08A4000FCF87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB14CA11180E08A4000FCF87 /* InfoPlist.strings */; };
+		AB14CA15180E08A4000FCF87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14CA14180E08A4000FCF87 /* main.m */; };
+		AB14CA19180E08A4000FCF87 /* RCWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14CA18180E08A4000FCF87 /* RCWAppDelegate.m */; };
+		AB14CA1B180E08A4000FCF87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB14CA1A180E08A4000FCF87 /* Images.xcassets */; };
+		AB14CA22180E08A4000FCF87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14CA21180E08A4000FCF87 /* XCTest.framework */; };
+		AB14CA23180E08A4000FCF87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14CA08180E08A4000FCF87 /* Foundation.framework */; };
+		AB14CA24180E08A4000FCF87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14CA0C180E08A4000FCF87 /* UIKit.framework */; };
+		AB14CA2C180E08A4000FCF87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB14CA2A180E08A4000FCF87 /* InfoPlist.strings */; };
+		AB14CA5F180E0DA7000FCF87 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14CA5E180E0DA7000FCF87 /* CoreData.framework */; };
+		AB14CA62180E0DD7000FCF87 /* Storyboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB14CA61180E0DD7000FCF87 /* Storyboard_iPhone.storyboard */; };
+		AB14CA65180E0E48000FCF87 /* RCWContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14CA64180E0E48000FCF87 /* RCWContentViewController.m */; };
+		AB20479A1839C97400966A9D /* RCWGentleErrorNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2047991839C97400966A9D /* RCWGentleErrorNotificationView.xib */; };
+		AB2BD9FB189991AF00477D1D /* RCWTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2BD9FA189991AF00477D1D /* RCWTextFieldCell.m */; };
+		AB2BD9FE1899934C00477D1D /* RCWLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2BD9FD1899934C00477D1D /* RCWLabelCell.m */; };
+		AB339280189C1B0400E4E3A5 /* RCWSocketServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AB33927D189C1B0400E4E3A5 /* RCWSocketServerConnection.m */; };
+		AB339281189C1B0400E4E3A5 /* RCWSocketServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AB33927D189C1B0400E4E3A5 /* RCWSocketServerConnection.m */; };
+		AB339282189C1B0400E4E3A5 /* RCWSocketClientConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AB33927F189C1B0400E4E3A5 /* RCWSocketClientConnection.m */; };
+		AB339283189C1B0400E4E3A5 /* RCWSocketClientConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AB33927F189C1B0400E4E3A5 /* RCWSocketClientConnection.m */; };
+		AB5343C8185F68AF003A5E26 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5343C7185F68AF003A5E26 /* libz.dylib */; };
+		AB6B487518DE387300CBD711 /* RCWWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6B487418DE387300CBD711 /* RCWWebView.m */; };
+		ABDFCF241819650F00BBFAA5 /* RCWSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDFCF231819650F00BBFAA5 /* RCWSettingsViewController.m */; };
+		ABFD546E18935232002F6165 /* RCWBonjourConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD545E18935232002F6165 /* RCWBonjourConnection.m */; };
+		ABFD546F18935232002F6165 /* RCWBonjourConnectionFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD546018935232002F6165 /* RCWBonjourConnectionFinder.m */; };
+		ABFD547018935232002F6165 /* RCWDataStreamCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD546218935232002F6165 /* RCWDataStreamCollector.m */; };
+		ABFD547118935232002F6165 /* RCWDataStreamEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD546418935232002F6165 /* RCWDataStreamEmitter.m */; };
+		ABFD547218935232002F6165 /* RCWKGClientAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD546618935232002F6165 /* RCWKGClientAPI.m */; };
+		ABFD547318935232002F6165 /* RCWKGProtocolCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD546818935232002F6165 /* RCWKGProtocolCommand.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB14CA25180E08A4000FCF87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB14C9FD180E08A4000FCF87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB14CA04180E08A4000FCF87;
+			remoteInfo = StageClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4027B774186205EC00168444 /* RCWHealthMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWHealthMeter.h; sourceTree = "<group>"; };
+		4027B775186205EC00168444 /* RCWHealthMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWHealthMeter.m; sourceTree = "<group>"; };
+		AB006107183863EE00667A46 /* RCWGentleErrorNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWGentleErrorNotificationView.h; sourceTree = "<group>"; };
+		AB006108183863EE00667A46 /* RCWGentleErrorNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWGentleErrorNotificationView.m; sourceTree = "<group>"; };
+		AB021FEA183B1F4F00DC2725 /* RCWGentleErrorNotificationView-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RCWGentleErrorNotificationView-bg.png"; sourceTree = "<group>"; };
+		AB14CA05180E08A4000FCF87 /* KeyGrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyGrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB14CA08180E08A4000FCF87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB14CA0A180E08A4000FCF87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB14CA0C180E08A4000FCF87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB14CA10180E08A4000FCF87 /* KeyGrip-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyGrip-Info.plist"; sourceTree = "<group>"; };
+		AB14CA12180E08A4000FCF87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB14CA14180E08A4000FCF87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB14CA16180E08A4000FCF87 /* KeyGrip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyGrip-Prefix.pch"; sourceTree = "<group>"; };
+		AB14CA17180E08A4000FCF87 /* RCWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCWAppDelegate.h; sourceTree = "<group>"; };
+		AB14CA18180E08A4000FCF87 /* RCWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCWAppDelegate.m; sourceTree = "<group>"; };
+		AB14CA1A180E08A4000FCF87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB14CA20180E08A4000FCF87 /* KeyGripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyGripTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB14CA21180E08A4000FCF87 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AB14CA29180E08A4000FCF87 /* KeyGripTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyGripTests-Info.plist"; sourceTree = "<group>"; };
+		AB14CA2B180E08A4000FCF87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB14CA5E180E0DA7000FCF87 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AB14CA61180E0DD7000FCF87 /* Storyboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPhone.storyboard; sourceTree = "<group>"; };
+		AB14CA63180E0E48000FCF87 /* RCWContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWContentViewController.h; sourceTree = "<group>"; };
+		AB14CA64180E0E48000FCF87 /* RCWContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWContentViewController.m; sourceTree = "<group>"; };
+		AB2047991839C97400966A9D /* RCWGentleErrorNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCWGentleErrorNotificationView.xib; sourceTree = "<group>"; };
+		AB2BD9F9189991AF00477D1D /* RCWTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWTextFieldCell.h; sourceTree = "<group>"; };
+		AB2BD9FA189991AF00477D1D /* RCWTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWTextFieldCell.m; sourceTree = "<group>"; };
+		AB2BD9FC1899934C00477D1D /* RCWLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWLabelCell.h; sourceTree = "<group>"; };
+		AB2BD9FD1899934C00477D1D /* RCWLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWLabelCell.m; sourceTree = "<group>"; };
+		AB33927C189C1B0400E4E3A5 /* RCWSocketServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCWSocketServerConnection.h; path = ../../KeyGripNet/KeyGripNet/RCWSocketServerConnection.h; sourceTree = "<group>"; };
+		AB33927D189C1B0400E4E3A5 /* RCWSocketServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCWSocketServerConnection.m; path = ../../KeyGripNet/KeyGripNet/RCWSocketServerConnection.m; sourceTree = "<group>"; };
+		AB33927E189C1B0400E4E3A5 /* RCWSocketClientConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCWSocketClientConnection.h; path = ../../KeyGripNet/KeyGripNet/RCWSocketClientConnection.h; sourceTree = "<group>"; };
+		AB33927F189C1B0400E4E3A5 /* RCWSocketClientConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCWSocketClientConnection.m; path = ../../KeyGripNet/KeyGripNet/RCWSocketClientConnection.m; sourceTree = "<group>"; };
+		AB5343C7185F68AF003A5E26 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AB6B487318DE387300CBD711 /* RCWWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWWebView.h; sourceTree = "<group>"; };
+		AB6B487418DE387300CBD711 /* RCWWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWWebView.m; sourceTree = "<group>"; };
+		ABDFCF221819650F00BBFAA5 /* RCWSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWSettingsViewController.h; sourceTree = "<group>"; };
+		ABDFCF231819650F00BBFAA5 /* RCWSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWSettingsViewController.m; sourceTree = "<group>"; };
+		ABFD545D18935232002F6165 /* RCWBonjourConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCWBonjourConnection.h; path = ../../KeyGripNet/KeyGripNet/RCWBonjourConnection.h; sourceTree = "<group>"; };
+		ABFD545E18935232002F6165 /* RCWBonjourConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCWBonjourConnection.m; path = ../../KeyGripNet/KeyGripNet/RCWBonjourConnection.m; sourceTree = "<group>"; };
+		ABFD545F18935232002F6165 /* RCWBonjourConnectionFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCWBonjourConnectionFinder.h; path = ../../KeyGripNet/KeyGripNet/RCWBonjourConnectionFinder.h; sourceTree = "<group>"; };
+		ABFD546018935232002F6165 /* RCWBonjourConnectionFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCWBonjourConnectionFinder.m; path = ../../KeyGripNet/KeyGripNet/RCWBonjourConnectionFinder.m; sourceTree = "<group>"; };
+		ABFD546118935232002F6165 /* RCWDataStreamCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCWDataStreamCollector.h; path = ../../KeyGripNet/KeyGripNet/RCWDataStreamCollector.h; sourceTree = "<group>"; };
+		ABFD546218935232002F6165 /* RCWDataStreamCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCWDataStreamCollector.m; path = ../../KeyGripNet/KeyGripNet/RCWDataStreamCollector.m; sourceTree = "<group>"; };
+		ABFD546318935232002F6165 /* RCWDataStreamEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCWDataStreamEmitter.h; path = ../../KeyGripNet/KeyGripNet/RCWDataStreamEmitter.h; sourceTree = "<group>"; };
+		ABFD546418935232002F6165 /* RCWDataStreamEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCWDataStreamEmitter.m; path = ../../KeyGripNet/KeyGripNet/RCWDataStreamEmitter.m; sourceTree = "<group>"; };
+		ABFD546518935232002F6165 /* RCWKGClientAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCWKGClientAPI.h; path = ../../KeyGripNet/KeyGripNet/RCWKGClientAPI.h; sourceTree = "<group>"; };
+		ABFD546618935232002F6165 /* RCWKGClientAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCWKGClientAPI.m; path = ../../KeyGripNet/KeyGripNet/RCWKGClientAPI.m; sourceTree = "<group>"; };
+		ABFD546718935232002F6165 /* RCWKGProtocolCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCWKGProtocolCommand.h; path = ../../KeyGripNet/KeyGripNet/RCWKGProtocolCommand.h; sourceTree = "<group>"; };
+		ABFD546818935232002F6165 /* RCWKGProtocolCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCWKGProtocolCommand.m; path = ../../KeyGripNet/KeyGripNet/RCWKGProtocolCommand.m; sourceTree = "<group>"; };
+		ABFD546D18935232002F6165 /* RCWStreamConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCWStreamConnection.h; path = ../../KeyGripNet/KeyGripNet/RCWStreamConnection.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB14CA02180E08A4000FCF87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB5343C8185F68AF003A5E26 /* libz.dylib in Frameworks */,
+				AB14CA5F180E0DA7000FCF87 /* CoreData.framework in Frameworks */,
+				AB14CA0B180E08A4000FCF87 /* CoreGraphics.framework in Frameworks */,
+				AB14CA0D180E08A4000FCF87 /* UIKit.framework in Frameworks */,
+				AB14CA09180E08A4000FCF87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB14CA1D180E08A4000FCF87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB14CA22180E08A4000FCF87 /* XCTest.framework in Frameworks */,
+				AB14CA24180E08A4000FCF87 /* UIKit.framework in Frameworks */,
+				AB14CA23180E08A4000FCF87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB021FF3183B20B100DC2725 /* Client Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				ABFD545D18935232002F6165 /* RCWBonjourConnection.h */,
+				ABFD545E18935232002F6165 /* RCWBonjourConnection.m */,
+				ABFD545F18935232002F6165 /* RCWBonjourConnectionFinder.h */,
+				ABFD546018935232002F6165 /* RCWBonjourConnectionFinder.m */,
+				AB33927C189C1B0400E4E3A5 /* RCWSocketServerConnection.h */,
+				AB33927D189C1B0400E4E3A5 /* RCWSocketServerConnection.m */,
+				AB33927E189C1B0400E4E3A5 /* RCWSocketClientConnection.h */,
+				AB33927F189C1B0400E4E3A5 /* RCWSocketClientConnection.m */,
+				ABFD546118935232002F6165 /* RCWDataStreamCollector.h */,
+				ABFD546218935232002F6165 /* RCWDataStreamCollector.m */,
+				ABFD546318935232002F6165 /* RCWDataStreamEmitter.h */,
+				ABFD546418935232002F6165 /* RCWDataStreamEmitter.m */,
+				ABFD546518935232002F6165 /* RCWKGClientAPI.h */,
+				ABFD546618935232002F6165 /* RCWKGClientAPI.m */,
+				ABFD546718935232002F6165 /* RCWKGProtocolCommand.h */,
+				ABFD546818935232002F6165 /* RCWKGProtocolCommand.m */,
+				ABFD546D18935232002F6165 /* RCWStreamConnection.h */,
+			);
+			name = "Client Protocol";
+			sourceTree = "<group>";
+		};
+		AB14C9FC180E08A4000FCF87 = {
+			isa = PBXGroup;
+			children = (
+				AB14CA0E180E08A4000FCF87 /* KeyGrip */,
+				AB14CA27180E08A4000FCF87 /* KeyGripTests */,
+				AB14CA07180E08A4000FCF87 /* Frameworks */,
+				AB14CA06180E08A4000FCF87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB14CA06180E08A4000FCF87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB14CA05180E08A4000FCF87 /* KeyGrip.app */,
+				AB14CA20180E08A4000FCF87 /* KeyGripTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB14CA07180E08A4000FCF87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB5343C7185F68AF003A5E26 /* libz.dylib */,
+				AB14CA5E180E0DA7000FCF87 /* CoreData.framework */,
+				AB14CA08180E08A4000FCF87 /* Foundation.framework */,
+				AB14CA0A180E08A4000FCF87 /* CoreGraphics.framework */,
+				AB14CA0C180E08A4000FCF87 /* UIKit.framework */,
+				AB14CA21180E08A4000FCF87 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB14CA0E180E08A4000FCF87 /* KeyGrip */ = {
+			isa = PBXGroup;
+			children = (
+				AB14CA17180E08A4000FCF87 /* RCWAppDelegate.h */,
+				AB14CA18180E08A4000FCF87 /* RCWAppDelegate.m */,
+				AB14CA61180E0DD7000FCF87 /* Storyboard_iPhone.storyboard */,
+				AB14CA63180E0E48000FCF87 /* RCWContentViewController.h */,
+				AB14CA64180E0E48000FCF87 /* RCWContentViewController.m */,
+				ABDFCF221819650F00BBFAA5 /* RCWSettingsViewController.h */,
+				ABDFCF231819650F00BBFAA5 /* RCWSettingsViewController.m */,
+				AB2BD9F9189991AF00477D1D /* RCWTextFieldCell.h */,
+				AB2BD9FA189991AF00477D1D /* RCWTextFieldCell.m */,
+				AB2BD9FC1899934C00477D1D /* RCWLabelCell.h */,
+				AB2BD9FD1899934C00477D1D /* RCWLabelCell.m */,
+				AB006107183863EE00667A46 /* RCWGentleErrorNotificationView.h */,
+				AB006108183863EE00667A46 /* RCWGentleErrorNotificationView.m */,
+				AB2047991839C97400966A9D /* RCWGentleErrorNotificationView.xib */,
+				AB021FEA183B1F4F00DC2725 /* RCWGentleErrorNotificationView-bg.png */,
+				4027B774186205EC00168444 /* RCWHealthMeter.h */,
+				4027B775186205EC00168444 /* RCWHealthMeter.m */,
+				AB6B487318DE387300CBD711 /* RCWWebView.h */,
+				AB6B487418DE387300CBD711 /* RCWWebView.m */,
+				AB021FF3183B20B100DC2725 /* Client Protocol */,
+				AB14CA1A180E08A4000FCF87 /* Images.xcassets */,
+				AB14CA0F180E08A4000FCF87 /* Supporting Files */,
+			);
+			path = KeyGrip;
+			sourceTree = "<group>";
+		};
+		AB14CA0F180E08A4000FCF87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB14CA10180E08A4000FCF87 /* KeyGrip-Info.plist */,
+				AB14CA11180E08A4000FCF87 /* InfoPlist.strings */,
+				AB14CA14180E08A4000FCF87 /* main.m */,
+				AB14CA16180E08A4000FCF87 /* KeyGrip-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB14CA27180E08A4000FCF87 /* KeyGripTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB14CA28180E08A4000FCF87 /* Supporting Files */,
+			);
+			path = KeyGripTests;
+			sourceTree = "<group>";
+		};
+		AB14CA28180E08A4000FCF87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB14CA29180E08A4000FCF87 /* KeyGripTests-Info.plist */,
+				AB14CA2A180E08A4000FCF87 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB14CA04180E08A4000FCF87 /* KeyGrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB14CA31180E08A4000FCF87 /* Build configuration list for PBXNativeTarget "KeyGrip" */;
+			buildPhases = (
+				AB14CA01180E08A4000FCF87 /* Sources */,
+				AB14CA02180E08A4000FCF87 /* Frameworks */,
+				AB14CA03180E08A4000FCF87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyGrip;
+			productName = StageClip;
+			productReference = AB14CA05180E08A4000FCF87 /* KeyGrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB14CA1F180E08A4000FCF87 /* KeyGripTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB14CA34180E08A4000FCF87 /* Build configuration list for PBXNativeTarget "KeyGripTests" */;
+			buildPhases = (
+				AB14CA1C180E08A4000FCF87 /* Sources */,
+				AB14CA1D180E08A4000FCF87 /* Frameworks */,
+				AB14CA1E180E08A4000FCF87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB14CA26180E08A4000FCF87 /* PBXTargetDependency */,
+			);
+			name = KeyGripTests;
+			productName = StageClipTests;
+			productReference = AB14CA20180E08A4000FCF87 /* KeyGripTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB14C9FD180E08A4000FCF87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RCW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Rubber City Wizards, Ltd.";
+				TargetAttributes = {
+					AB14CA1F180E08A4000FCF87 = {
+						TestTargetID = AB14CA04180E08A4000FCF87;
+					};
+				};
+			};
+			buildConfigurationList = AB14CA00180E08A4000FCF87 /* Build configuration list for PBXProject "KeyGrip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB14C9FC180E08A4000FCF87;
+			productRefGroup = AB14CA06180E08A4000FCF87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB14CA04180E08A4000FCF87 /* KeyGrip */,
+				AB14CA1F180E08A4000FCF87 /* KeyGripTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB14CA03180E08A4000FCF87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB021FEB183B1F4F00DC2725 /* RCWGentleErrorNotificationView-bg.png in Resources */,
+				AB20479A1839C97400966A9D /* RCWGentleErrorNotificationView.xib in Resources */,
+				AB14CA13180E08A4000FCF87 /* InfoPlist.strings in Resources */,
+				AB14CA62180E0DD7000FCF87 /* Storyboard_iPhone.storyboard in Resources */,
+				AB14CA1B180E08A4000FCF87 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB14CA1E180E08A4000FCF87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB14CA2C180E08A4000FCF87 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB14CA01180E08A4000FCF87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB14CA65180E0E48000FCF87 /* RCWContentViewController.m in Sources */,
+				AB14CA15180E08A4000FCF87 /* main.m in Sources */,
+				ABFD547118935232002F6165 /* RCWDataStreamEmitter.m in Sources */,
+				AB339280189C1B0400E4E3A5 /* RCWSocketServerConnection.m in Sources */,
+				AB2BD9FB189991AF00477D1D /* RCWTextFieldCell.m in Sources */,
+				4027B776186205EC00168444 /* RCWHealthMeter.m in Sources */,
+				AB6B487518DE387300CBD711 /* RCWWebView.m in Sources */,
+				AB14CA19180E08A4000FCF87 /* RCWAppDelegate.m in Sources */,
+				ABFD546F18935232002F6165 /* RCWBonjourConnectionFinder.m in Sources */,
+				ABDFCF241819650F00BBFAA5 /* RCWSettingsViewController.m in Sources */,
+				AB006109183863EE00667A46 /* RCWGentleErrorNotificationView.m in Sources */,
+				ABFD547318935232002F6165 /* RCWKGProtocolCommand.m in Sources */,
+				AB2BD9FE1899934C00477D1D /* RCWLabelCell.m in Sources */,
+				AB339282189C1B0400E4E3A5 /* RCWSocketClientConnection.m in Sources */,
+				ABFD547018935232002F6165 /* RCWDataStreamCollector.m in Sources */,
+				ABFD546E18935232002F6165 /* RCWBonjourConnection.m in Sources */,
+				ABFD547218935232002F6165 /* RCWKGClientAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB14CA1C180E08A4000FCF87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB339283189C1B0400E4E3A5 /* RCWSocketClientConnection.m in Sources */,
+				AB339281189C1B0400E4E3A5 /* RCWSocketServerConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB14CA26180E08A4000FCF87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB14CA04180E08A4000FCF87 /* KeyGrip */;
+			targetProxy = AB14CA25180E08A4000FCF87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB14CA11180E08A4000FCF87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB14CA12180E08A4000FCF87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AB14CA2A180E08A4000FCF87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB14CA2B180E08A4000FCF87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB14CA2F180E08A4000FCF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB14CA30180E08A4000FCF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB14CA32180E08A4000FCF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyGrip/KeyGrip-Prefix.pch";
+				INFOPLIST_FILE = "KeyGrip/KeyGrip-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = KeyGrip;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB14CA33180E08A4000FCF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyGrip/KeyGrip-Prefix.pch";
+				INFOPLIST_FILE = "KeyGrip/KeyGrip-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = KeyGrip;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AB14CA35180E08A4000FCF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KeyGrip.app/KeyGrip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyGrip/KeyGrip-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KeyGripTests/KeyGripTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jonathan/Projects/rcw/KeyGrip/client/lib/testflight,
+				);
+				PRODUCT_NAME = KeyGripTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AB14CA36180E08A4000FCF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KeyGrip.app/KeyGrip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyGrip/KeyGrip-Prefix.pch";
+				INFOPLIST_FILE = "KeyGripTests/KeyGripTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jonathan/Projects/rcw/KeyGrip/client/lib/testflight,
+				);
+				PRODUCT_NAME = KeyGripTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB14CA00180E08A4000FCF87 /* Build configuration list for PBXProject "KeyGrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB14CA2F180E08A4000FCF87 /* Debug */,
+				AB14CA30180E08A4000FCF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB14CA31180E08A4000FCF87 /* Build configuration list for PBXNativeTarget "KeyGrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB14CA32180E08A4000FCF87 /* Debug */,
+				AB14CA33180E08A4000FCF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB14CA34180E08A4000FCF87 /* Build configuration list for PBXNativeTarget "KeyGripTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB14CA35180E08A4000FCF87 /* Debug */,
+				AB14CA36180E08A4000FCF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB14C9FD180E08A4000FCF87 /* Project object */;
+}

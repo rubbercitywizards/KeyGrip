@@ -1,0 +1,210 @@
+<link rel="stylesheet" type="text/css" href="display.css">
+<h1>Physics and The User Interface on iOS</h1>
+
+<p>There are three parts to this demo.</p>
+
+<ul>
+<li><p>First we're going to walk through the ball drop example we saw in the slides, and we'll see how to build an animation scene with the dynamic animator and behaviors.</p></li>
+<li><p>Next we'll at least touch on some sample code to recreate the effect in the messages app.</p></li>
+<li><p>Finally, we'll look at an example using this that helped solve a real world problem. The people who had the problem happen to be my six and three year old children, but that doesn't make it any less significant. Just funnier.</p></li>
+</ul>
+
+<h1>Dangle</h1>
+
+<p>For our first sample, that I call "Dangle", we're going to reconstruct all the pieces of the dangling text field that we saw in the slides from scratch. First, we start with a blank project with a single, empty view controller.</p>
+
+<p>We're going to need a couple properties:</p>
+
+<pre><code>@interface RCWViewController ()
+@property (nonatomic, strong) UIDynamicAnimator *animator;
+@property (nonatomic, strong) UIGravityBehavior *gravity;
+@end
+</code></pre>
+
+<p>The <code>animator</code> property is the physics world. We need to keep a strong reference to it or else ARC will release it and it won't be very useful to us.
+We're also adding a property to hold a reference to the gravity behavior. Just bear with me. We'll discuss why in a moment.</p>
+
+<p>Let's draw our ball in <code>viewDidLoad</code>:</p>
+
+<pre><code>- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    UIView *ball = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+    ball.center = CGPointMake(self.view.center.x + 150, 70);
+    ball.backgroundColor = [UIColor redColor];
+    ball.layer.masksToBounds = YES;
+    ball.layer.cornerRadius = 20;
+    [self.view addSubview:ball];
+}
+</code></pre>
+
+<p>We need to create our animator:</p>
+
+<pre><code>self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+</code></pre>
+
+<p>By itself it doesn't do anything. We need to add behaviors attached to the <code>UIView</code>s on the screen as items:</p>
+
+<pre><code>self.gravity = [[UIGravityBehavior alloc] initWithItems:@[ball]];
+[self.animator addBehavior:self.gravity];
+</code></pre>
+
+<p>The ball falls off the screen because we haven't set up collision behavior with boundaries:</p>
+
+<pre><code>UICollisionBehavior *collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[ball]];
+collisionBehavior.collisionMode = UICollisionBehaviorModeEverything;
+collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
+[self.animator addBehavior:collisionBehavior];
+</code></pre>
+
+<p>By default a view's size determines it's physical properties in the world, but we can adjust them to be anything we want with a UIDynamicItemBehavior:</p>
+
+<pre><code>UIDynamicItemBehavior *itemBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[ball]];
+itemBehavior.elasticity = 0.8;
+itemBehavior.density = 5;
+[self.animator addBehavior:itemBehavior];
+</code></pre>
+
+<p>Now, draw the anchor, joint, and textfield:</p>
+
+<pre><code>UIView *anchor = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+anchor.center = CGPointMake(self.view.center.x, 200);
+anchor.backgroundColor = [UIColor blueColor];
+[self.view addSubview:anchor];
+
+UIView *joint = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+joint.center = CGPointMake(self.view.center.x, 350);
+joint.backgroundColor = [UIColor blueColor];
+[self.view addSubview:joint];
+
+UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 400, 60)];
+textField.center = CGPointMake(self.view.center.x, 500);
+textField.textAlignment = NSTextAlignmentCenter;
+textField.borderStyle = UITextBorderStyleRoundedRect;
+textField.font = [UIFont boldSystemFontOfSize:35];
+textField.backgroundColor = [UIColor lightGrayColor];
+[textField becomeFirstResponder];
+[self.view addSubview:textField];
+</code></pre>
+
+<p>Run this to see what happens. Ball falls through, keyboard gets in the way.</p>
+
+<p>These are a bunch of housekeeping methods that handle the keyboard and resizing the view controller's view to get out of the way. We have to do this ourselves since we're not using a scroll view or text view or other content aware views that automatically resize for us.</p>
+
+<pre><code>- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)keyboardDidShow:(NSNotification *)note
+{
+    CGRect keyboardFrame = [(NSValue *)note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    keyboardFrame = [self.view convertRect:keyboardFrame fromView:self.view.window];
+    CGRect viewFrame = self.view.frame;
+    viewFrame.size.height -= keyboardFrame.size.height;
+    self.view.frame = viewFrame;
+}
+
+- (void)keyboardWillHide:(NSNotification *)note
+{
+    CGRect keyboardFrame = [(NSValue *)note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGRect viewFrame = self.view.frame;
+    viewFrame.size.height += keyboardFrame.size.height;
+    self.view.frame = viewFrame;
+}
+</code></pre>
+
+<p>In order for the ball to collide with the text field, we need to add that text field to the collision behavior:</p>
+
+<pre><code>[collisionBehavior addItem:joint];
+[collisionBehavior addItem:textField];
+</code></pre>
+
+<p>We could have initialized the collision behavior with these items in the array we passed in, but adding them later works just as well.</p>
+
+<p>The problem is that the other three views aren't attached:</p>
+
+<pre><code>UIAttachmentBehavior *jointAttachment = [[UIAttachmentBehavior alloc] initWithItem:textField attachedToItem:joint];
+[self.animator addBehavior:jointAttachment];
+UIAttachmentBehavior *anchorAttacment = [[UIAttachmentBehavior alloc] initWithItem:joint attachedToAnchor:anchor.center];
+[self.animator addBehavior:anchorAttacment];
+</code></pre>
+
+<p>That creates the chain link that we wanted, but they are drifting all over the place. We want them affected by gravity, so let's add these items to the gravity behavior:</p>
+
+<pre><code>[self.gravity addItem:joint];
+[self.gravity addItem:textField];
+</code></pre>
+
+<p>That's it! It does exactly what we saw in the slide.</p>
+
+<p>To play with the physics a bit, let's toggle the direction of gravity every time we tap on the screen. This is why we needed to assign it to a property. It's the easiest way to keep track of it, rather than loop through the animators behaviors looking for it:</p>
+
+<pre><code>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    self.gravity.angle *= -1;
+}
+</code></pre>
+
+<h1>Collection Views</h1>
+
+<p>Run Demo</p>
+
+<h2>Spring Layout</h2>
+
+<p>Initialize the animator, not with a reference view, but with the layout</p>
+
+<p>Now, when asked by system for layout attributes, we just ask the animator!</p>
+
+<p>How does the animator know? Well...</p>
+
+<p>We create the spring behaviors when preparing the layout (called by collection view).</p>
+
+<p>We adjust the frames manually to spread them out based on scrolling speed, and let the physics engine suck them back to the anchor points when scrolling stops.</p>
+
+<pre><code>-updateItemUsingCurrentState:
+</code></pre>
+
+<p>Note that we're using anchor points, not attaching to each item in a long chain. That wouldn't work with thousands of cells.</p>
+
+<h2>Dynamic Layout</h2>
+
+<p>Initialized the same as before.</p>
+
+<p>When the system asks us for attributes, we punt to the animator.</p>
+
+<p>But this time, we use a snap behavior to realign all the items immediately if they were resized (using the flag as a check).</p>
+
+<h1>Show Apple's dynamics catalog</h1>
+
+<p>Apple has a lot of examples of behaviors.</p>
+
+<p>Building complex behaviors out of simpler ones, by using child behaviors.</p>
+
+<h1>Resources</h1>
+
+<p>Show the resources</p>
+
+<h1>Pig Spinner</h1>
+
+<p>And now we reach the funny point where I apply UIKit Dynamics to settle a household argument.</p>
+
+<p><code>UIDynamicItemBehavior</code> with an angular resistance.</p>
+
+<p>Setting an <em>action</em> on the behavior that gets called at every time step.</p>
+
+<p><code>showNameOfSegmentAtAngle:</code> is the algorithm of peace in our home.</p>
+
+<p>We initiate the spin in the <code>dragged:</code> method when the gesture ends with <code>addAngularVelocity:forItem</code>.</p>
+
+<script src='zepto.js'></script>
+<script src='selections.js'></script>
+
