@@ -20,6 +20,8 @@ There are two pieces, the Mac server app and the iOS client app. You'll need Xco
 
 Open `server/KeyGripServer.xcodeproj`. Then choose the "Install KeyGripServer" scheme from the scheme chooser. Simply build the project and this scheme will copy the `KeyGripServer.app` bundle ready to go into the `/Applications` directory.
 
+![Choosing A Scheme](scheme.gif)
+
 When you double click to run the app, you'll want to type in a Bonjour identifier into the text field. You'll use this same identifier on the iOS client.
 
 
