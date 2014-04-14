@@ -2,6 +2,8 @@
 
 KeyGrip is a simple remote pasteboard and presentation notes app. You write your notes in [Markdown][md], drop the file into the Mac server application, fire up the companion iOS app on the same Wifi network, and *boom*. You see your presentation notes and can tap on text snippets to have them automatically transfered to the Mac's pasteboard.
 
+  [md]: https://daringfireball.net/projects/markdown/
+
 ![Demo GIF](demo.gif)
 
 
@@ -75,9 +77,19 @@ Short answer: feel free to fork the project but you can't bundle any of the sour
 
 Thanks to Gabriel Handford and Sveinung Kval Bakken for their work on the `XCTAsyncTestCase` class used in the network protocol tests. Check the license on that source file for more info.
 
-Thanks to John Gruber's original `markdown.pl` script which is bundled with the server to generate the HTML for display on the client.
+Thanks to John Gruber's [original][md] `markdown.pl` script which is bundled with the server to generate the HTML for display on the client.
 
 [Derek Briggs][db] from [Neo Innovation](http://www.neo.com) did an awesome job on the icon. Give him some love and a hug.
 
-  [md]: https://daringfireball.net/projects/markdown/
   [db]: http://twitter.com/PixelJanitor
+
+Thanks also to the early beta testers!
+
+- [Delisa Mason](http://twitter.com/kattrali)
+- Joseph DeCarlo
+- [Brandon Alexander](http://twitter.com/balexander)
+- Brian Hardy
+- [Brian Partridge](https://twitter.com/brianpartridge)
+- [Matthew Morey](https://twitter.com/xzolian)
+- Yukio Goto
+
