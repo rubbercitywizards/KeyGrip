@@ -18,7 +18,7 @@ KeyGrip helps by being a remote pasteboard on an iOS device and also a collectio
 
 There are two pieces, the Mac server app and the iOS client app.
 
-You can [download the KeyGripServer as a signed Mac application][app] ready to go. Alas, we don't have a way to easily distribute the iOS app yet.
+You can [download the KeyGripServer as a signed Mac application][app] ready to go. Alas, we don't have a way to easily distribute the iOS app yet. Follow the instructions below for building the client iOS app.
 
   [app]: https://github.com/rubbercitywizards/KeyGrip/releases/download/v1.0/KeyGripServer-1.0.zip
 
@@ -26,17 +26,17 @@ You can [download the KeyGripServer as a signed Mac application][app] ready to g
 
 You'll need Xcode 5.1, a Mac running Mavericks and an iOS 7.1 device in order to use this. In order to be able to build and install the app on your iOS device, you'll need to have a paid Apple developer account.
 
+#### iOS Client App
+
+Open `client/KeyGrip.xcodeproj`. Then use the usual process to build and run to install on your attached iOS device. Once the app runs, tap the `Settings` button and make sure you type in the same Bonjour identifier as you typed in the Mac server app.
+
 #### Mac Server App
 
-Open `server/KeyGripServer.xcodeproj`. Then choose the "Install KeyGripServer" scheme from the scheme chooser. Simply build the project and this scheme will copy the `KeyGripServer.app` bundle ready to go into the `/Applications` directory.
+Open `server/KeyGripServer.xcodeproj`. Then choose the "Install KeyGripServer" scheme from the scheme chooser. Simply build the project and this scheme will copy the `KeyGripServer.app` bundle ready to go into the `/Applications` directory. (Because the app is sandboxed you'll need to either sign it with your developer account, or turn off the sandboxing entitlement. Or just [download the pre-built app][app].)
 
 ![Choosing A Scheme](scheme.gif)
 
 When you double click to run the app, you'll want to type in a Bonjour identifier into the text field. You'll use this same identifier on the iOS client.
-
-#### iOS Client App
-
-Open `client/KeyGrip.xcodeproj`. Then use the usual process to build and run to install on your attached iOS device. Once the app runs, tap the `Settings` button and make sure you type in the same Bonjour identifier as you typed in the Mac server app.
 
 
 ## How To Use
