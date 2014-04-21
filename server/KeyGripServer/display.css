@@ -2,6 +2,7 @@ body {
     font-family: Avenir, Helvetica, sans-serif;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
+    font-size: 140%
 }
 
 pre {
