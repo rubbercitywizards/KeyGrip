@@ -86,9 +86,9 @@ Thanks to John Gruber's [original][md] `markdown.pl` script which is bundled wit
 Thanks also to the early beta testers!
 
 - [Delisa Mason](http://twitter.com/kattrali)
-- Joseph DeCarlo
+- [Joseph DeCarlo](https://twitter.com/jdecarlo)
 - [Brandon Alexander](http://twitter.com/balexander)
-- Brian Hardy
+- [Brian Hardy](https://twitter.com/lyricsboy)
 - [Brian Partridge](https://twitter.com/brianpartridge)
 - [Matthew Morey](https://twitter.com/xzolian)
 - Yukio Goto
