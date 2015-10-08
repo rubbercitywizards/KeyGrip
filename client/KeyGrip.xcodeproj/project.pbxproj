@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4027B776186205EC00168444 /* RCWHealthMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4027B775186205EC00168444 /* RCWHealthMeter.m */; };
+		9E4A221B1BC5F2CB00AC5C3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4A221A1BC5F2CB00AC5C3B /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		AB006109183863EE00667A46 /* RCWGentleErrorNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB006108183863EE00667A46 /* RCWGentleErrorNotificationView.m */; };
 		AB021FEB183B1F4F00DC2725 /* RCWGentleErrorNotificationView-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AB021FEA183B1F4F00DC2725 /* RCWGentleErrorNotificationView-bg.png */; };
 		AB14CA09180E08A4000FCF87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14CA08180E08A4000FCF87 /* Foundation.framework */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		4027B774186205EC00168444 /* RCWHealthMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWHealthMeter.h; sourceTree = "<group>"; };
 		4027B775186205EC00168444 /* RCWHealthMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWHealthMeter.m; sourceTree = "<group>"; };
+		9E4A221A1BC5F2CB00AC5C3B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB006107183863EE00667A46 /* RCWGentleErrorNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWGentleErrorNotificationView.h; sourceTree = "<group>"; };
 		AB006108183863EE00667A46 /* RCWGentleErrorNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWGentleErrorNotificationView.m; sourceTree = "<group>"; };
 		AB021FEA183B1F4F00DC2725 /* RCWGentleErrorNotificationView-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RCWGentleErrorNotificationView-bg.png"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				4027B775186205EC00168444 /* RCWHealthMeter.m */,
 				AB6B487318DE387300CBD711 /* RCWWebView.h */,
 				AB6B487418DE387300CBD711 /* RCWWebView.m */,
+				9E4A221A1BC5F2CB00AC5C3B /* LaunchScreen.storyboard */,
 				AB021FF3183B20B100DC2725 /* Client Protocol */,
 				AB14CA1A180E08A4000FCF87 /* Images.xcassets */,
 				AB14CA0F180E08A4000FCF87 /* Supporting Files */,
@@ -324,6 +327,7 @@
 				AB021FEB183B1F4F00DC2725 /* RCWGentleErrorNotificationView-bg.png in Resources */,
 				AB20479A1839C97400966A9D /* RCWGentleErrorNotificationView.xib in Resources */,
 				AB14CA13180E08A4000FCF87 /* InfoPlist.strings in Resources */,
+				9E4A221B1BC5F2CB00AC5C3B /* LaunchScreen.storyboard in Resources */,
 				AB14CA62180E0DD7000FCF87 /* Storyboard_iPhone.storyboard in Resources */,
 				AB14CA1B180E08A4000FCF87 /* Images.xcassets in Resources */,
 			);
