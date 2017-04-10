@@ -91,7 +91,7 @@
 {
     NSPasteboard *pboard = [sender draggingPasteboard];
     if ([[pboard types] containsObject:NSURLPboardType]) {
-        NSURL *draggedFile = [NSURL URLFromPasteboard:pboard];
+        NSURL *draggedFile = [NSURL URLFromPasteboard:pboard].filePathURL;
         if ([self.extensions containsObject:[draggedFile.pathExtension lowercaseString]]) {
             RCWAppDelegate *delegate = (RCWAppDelegate *)[NSApplication sharedApplication].delegate;
             [delegate handleDroppedFile:draggedFile];
